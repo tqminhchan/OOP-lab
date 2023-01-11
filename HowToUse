@@ -1,0 +1,4 @@
+- Nếu chạy lệnh command thì file chạy là Aims.java
+- Nếu chạy application thì file chạy là AimsMain.java
+- 
+trước khi chạy file AimsMain.java thì copy vào VM argument của phần run configurations: --module-path "Tên file lib của java fx trên máy" --add-modules=javafx.controls,javafx.fxml
