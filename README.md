@@ -1,4 +1,4 @@
-# OOP-lab
+# OOP-lab AimsProject Problem Statement
 Object-Oriented Programing 
 There might be a future that Tiki and Sendo be in talks over a potential merger to contend other e-commerce platforms and especially those who have foreign backers. The merger of these two firms would create a Ti-do company, where “Ti” is from Tiki, and “do” is from Sendo, which means a billion-dollar company in Vietnamese. That firm, Ti-do company, would like you to help them create a brand-new system for AIMS project (AIMS stands for An Internet Media Store). Currently, there is only one type of media: Digital Video Disc (DVD).
 
