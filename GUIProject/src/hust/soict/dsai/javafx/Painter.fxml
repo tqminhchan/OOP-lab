@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" type="BorderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.soict.dsai.javafx.PainterController">
+   <left>
+      <VBox maxHeight="1.7976931348623157E308" opacity="0.87" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <TitledPane fx:id="drawingTools" animated="false" text="Tools">
+              <content>
+                <AnchorPane>
+                     <children>
+                        <RadioButton layoutX="8.0" layoutY="14.0" mnemonicParsing="false" onAction="#setPen" selected="true" text="Pen" textAlignment="JUSTIFY">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Tools" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton layoutX="8.0" layoutY="49.0" mnemonicParsing="false" onAction="#setEraser" text="Eraser" textOverrun="CLIP" toggleGroup="$Tools" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+              </content>
+               <VBox.margin>
+                  <Insets left="6.0" right="6.0" top="13.0" />
+               </VBox.margin>
+            </TitledPane>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clearButtonPressed" text="clear">
+               <VBox.margin>
+                  <Insets left="6.0" right="6.0" top="19.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="drawingAreaPane" onMouseDragged="#drawingOnMouseDragged" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </center>
+</fx:root>
